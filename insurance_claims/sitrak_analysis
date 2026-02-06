@@ -1,0 +1,4 @@
+SELECT COUNT (claim_id) AS count_Sitrak, 
+SUM (claim_amount) AS amount_Sitrak
+FROM insurance_claims
+WHERE car_brand = 'Sitrak' AND status = 'Approved';
