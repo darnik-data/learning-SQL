@@ -1,0 +1,9 @@
+CREATE TABLE jewelry_store (
+    id PRIMARY KEY AUTO_INCREMENT,
+    item_name VARCHAR(100),    
+    stone_type VARCHAR(50),    
+    metal_type VARCHAR(50),   
+    price INT,                 
+    stock_quantity INT,        
+    sale_date DATE             
+);
