@@ -1,0 +1,5 @@
+/* Вывести все изделия из золота, цена которых выше 13 000*/
+
+SELECT item_name, price
+FROM jewelry_store
+WHERE metal_type = 'Золото' AND price > 13000;
