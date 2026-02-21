@@ -1,0 +1,6 @@
+/* сколько всего единиц товара есть для каждого типа камня */
+
+SELECT stone_type,
+COUNT(stock_quantity)
+FROM jewelry_store
+GROUP BY stone_type;
