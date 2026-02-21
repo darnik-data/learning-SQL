@@ -1,0 +1,7 @@
+/* cруппировать товары по типу металла и выведи только те группы, где средняя цена изделий выше 10 000 */
+
+SELECT metal_type, 
+AVG(price) AS average_price
+FROM jewelry_store
+GROUP BY metal_type
+HAVING AVG(price) > 10000;
