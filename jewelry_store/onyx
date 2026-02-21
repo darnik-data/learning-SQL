@@ -1,0 +1,6 @@
+/* вывести список всех товаров с камнем «Оникс», отсортированных по цене от самого дорогого к дешевому*/
+
+SELECT item_name, price
+FROM jewelry_store
+WHERE stone_type = 'Оникс'
+ORDER BY price DESC;
