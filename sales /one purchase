@@ -1,0 +1,9 @@
+/*вывести список покупателей и покупок, стоиммоть одной покупки превышает 10000 */
+
+SELECT users.name AS name,
+users.city AS city,
+sales.amount AS amount,
+sales.category AS category 
+FROM sales
+JOIN users ON sales.users_id = users.id
+WHERE sales.amount > 10000;
