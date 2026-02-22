@@ -1,0 +1,8 @@
+/* выести покупки  покупателей, которые купили одежды на сумму свыше 5000 */ 
+
+SELECT user_id, 
+SUM(amount) AS amount_money
+FROM sales
+WHERE category = 'Одежда'
+GROUP BY user_id
+HAVING SUM(amount) > 5000;
