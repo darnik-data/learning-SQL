@@ -1,0 +1,8 @@
+/* вывести количество покупок в каждой категории, где покупок было больше одной */
+
+SELECT category, 
+COUNT(amount) AS quantity_amount
+FROM sales
+GROUP BY category
+HAVING COUNT(amount) > 1
+ORDER BY quantity_amount DESC;
