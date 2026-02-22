@@ -1,0 +1,6 @@
+INSERT INTO users (id, name, city, email) VALUES
+ (1, 'Александр', 'Москва', 'alex@mail.ru'),
+ (2, 'Дарья', 'Санкт-Петербург', 'daria@it.ru'),
+ (3, 'Мария', 'Казань', 'masha@data.com'),
+ (4, 'Иван', 'Екатеринбург', 'ivan@boss.ru'),
+ (5, 'Елена', 'Новосибирск','elena@work.ru');
